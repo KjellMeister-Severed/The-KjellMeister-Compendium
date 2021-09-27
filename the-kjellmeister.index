@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>The Kjellmeister Compendium</name>
+		<update version="1.0.0">
+			<file name="the-kjellmeister.index" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister.index" />
+		</update>
+	</info>
+	<files>
+		<file name="file1.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/file1.xml" />
+		<file name="file2.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/file2.xml" />
+	</files>
+</index>
