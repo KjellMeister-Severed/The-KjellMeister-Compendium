@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shaman</name>
+		<update version="1.0.1">
+			<file name="shaman.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/shaman.xml" />
+		</update>
+	</info>
+	<element name="Shaman" type="Class" source="The kjellmeister compendium" id="ID_KJELLMEISTER_SHAMAN">
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">An arcane warrior that channels the primal spirits of creation.</set>
+		</setters>
+		<description>
+			<p class="flavor">A female half-orc lumbered 
+				through the forest, her primal tattoos glistened in the light of the moon. A child of her tribe 
+				had seen a group of hobgoblins cutting lumber from their sacred 
+				grove of trees. Slicing her hand, the half-orc used her dark blood 
+				to inscribe a glyph on a the hilt of her greatclub. The weapon began to 
+				pulse with a deep green aura as she 
+				ventured forth to deal with the foolish 
+				hobgoblins that had dared profane the 
+				sacred grove of her tribe. The trespassers 
+				would pay with their lives for desecrating 
+				the sacred grove of the local spirits.
+				A hunched over, elderly halfling griped his 
+				necklace as he faced down the massive ogre who 
+				had come to threaten his village. The necklace, made 
+				from the finger bones of the villiage's previous shamans, 
+				allowed their spirits to empower his aging body. Drawing upon this power, he could once again move with the vigor of his youth. Quick as lightning, he struck the ogre’s head with the quarterstaff that marked him as the elder of his people. As his foe's body slumped to the ground, the elderly halfling reflected on his time as champion. Soon it would come to an end, and his body would return to the earth. However, his spirit would live on, providing aid to the next shaman.
+				In the dead of night, a thin elvish woman completed her sinister ritual, binding a spirit of pestilence to a lock of stolen hair. The following morning, far across the town, the man who had insulted the elvish woman the previous day came down with a sudden illness, and within hours he succumbed to the strange pox. The villagers suspected dark magic was at play, but after a few days they buried the fool and moved on.
+			</p>
+			<h2>Conduits of Spiritual Energy</h2>
+			<p>Every living thing; plants, animals, and even the landscape, is suffused with spiritual power. Those who learn to draw out this latent primal energy, 
+			and even control sentient spirits, are known as Shamans. Once they open themselves to the spirit of the world around them, they can use their magic enhance 
+			their bodies, curse their foes, shape the landscape, channel the elements, and heal the sick. This spiritual power is ancient in origin, and since its discovery, 
+			its has been passed from one to the next in an unending chain of sages.</p>
+			<h2>Creating your Shaman</h2>
+			<p>When creating your shaman, consider how you first learned to wield the power of spirits. Were you trained from birth to become the next champion of your tribe, 
+			destined to bear the power of your ancestors? Did a hag raise you in her ways, teaching you the secrets of hex magic? Or did you study under an ancient hermit, learning 
+			to draw upon the spiritual power within in all living things in order to heal the broken?</p>
+			<h2>Quick Build</h2>
+			<p>You can make a shaman quickly by using these suggestions. First, make Wisdom your highest ability score followed by Constitution. 
+			Second, choose the hermit background. Third, choose the guidance and shillelagh cantrips, the spells entangle and heroism, and the Body 
+			Sacred Technique.</p>
+			<h2>Spirituality (subclass)</h2>
+			<p>At 1st level, a shaman chooses their Spirituality, the method of shamanistic magic that you practice: Curse Binder, Earth Shaker, Spirit Warrior, Storm Caller, Wild Heart, or Witch Doctor, each of which is detailed at the end of this class description. Your Spirituality grants you features at 3rd level, and again at 6th, 10th, and 14th level in this class.</p>
+			<h3>Spirituality Spells</h3>
+			<p>Each Spirituality has a list of spells that you learn at the shaman levels noted in the Spirituality description. These Spirituality Spells count as shaman spells for you, but they don't count against your total number of Spells Known.</p>
+			<h2>Class Features</h2>
+			<p>As a Shaman, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li>
+					<strong>Hit Dice:</strong> 1d8 per shaman level</li>
+				<li>
+					<strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li>
+					<strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per class level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li>
+					<strong>Armor:</strong> Light armor, shields</li>
+				<li>
+					<strong>Weapons:</strong> Simple weapons, blow guns, nets</li>
+				<li>
+					<strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li>
+					<strong>Saving Throws:</strong> Wisdom, Charisma</li>
+				<li>
+					<strong>Skills:</strong> Choose two from Animal Handling, Arcana, Insight, Medicine, Nature, Performance or Religion.</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a quarterstaff or (b) any simple weapon</li>
+				<li>(a) a shortbow and 20 arrows or (b) 5 javelins</li>
+				<li>(a) a priests pack or (b) an explorers pack</li>
+				<li>Leather armor and a Shamanistic Fetish</li>
+			</ul>
+			<h5 class="caption">Spells known of 1st level and higher.</h5>
+			<p>At 1st level, you learn two 1st-level spells of your choice from the shaman spell list at the end of this class description.
+				The Spells Known column of the Shaman table shows when you learn more shaman spells of your choice of 1st-level and higher. A spell you choose must be of a level no higher than what’s shown in the table’s Slot Level column for your level. When you reach 6th level, for example, you learn a new shaman spell, which can be 1st, 2nd, or 3rd-level.
+				Additionally, when you gain a level in this class, you can choose one of the shaman spells you know and replace it with another spell of your choice from the shaman spell list, which also must be of a level for which you have spell slots.</p>
+			<h4>Spellcasting Ability</h4>
+			<ul class="unstyled mb">
+				<li>
+					<strong>Spell save DC:</strong> 8 + proficiency bonus + wisdom modifyer</li>
+				<li>
+					<strong>Spell attack modifier:</strong> proficiency bonus + wisdom modifier</li>
+			</ul>
+			<h3> Ritual Casting</h3>
+			<p>You can cast any shaman spell you know as a ritual so long as that spell has the ritual tag.</p>
+			<h3>Spellcasting Focus</h3>
+			<p>You use a shamanistic fetish as a spellcasting focus for your shaman spells. Shamistic fetishes are mundane items of personal significance to the shaman worth at least 1 gold.</p>
+			<h2>Sacred Focus</h2>
+			<p>In order to safely channel the overwhelming power of the spirit world, shamans must focus on a 
+			powerful aspect of themselves in order to avoid being consumed. At 1st level, choose one of the aspects below 
+			to be your Sacred Focus, each of which grants you certain innate benefits. </p>
+			<p class="indent"><strong>Bodily Focus</strong> You draw spiritual power through your body, bending the spirits to your will with your might. When you choose this focus your hit point maximum increases by 1, and it increases by 1 again each time you gain a level in this class. </p>
+			<p class="indent"><strong>Mental Focus</strong> You channel spiritual power through your wondrous mind, manipulating the spirits with your cunning wit. When you make an ability check or saving throw that uses your Intelligence score, you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1). </p>
+			<p class="indent"><strong>Emotional Focus</strong> You draw spiritual power into your heart and overwhelm spirits with your powerful emotions. When make a saving throw, you can choose to make the save with advantage, or disadvantage. However, the next saving throw you make is make with the opposite modifier. For example, if you choose to have advantage on a saving throw, your next saving throw is made at disadvantage </p>			
+			<p class="indent"><strong>Spiritual Focus</strong> You gently guide the spirits to do what you wish using the inner serenity of your soul. This same serenity grants you a measure of protection. While not wearing armor or wielding a shield, your Armor Class is equal 10 + your Dexterity modifier + your Wisdom modifier. </p>
+			<h2>Totemic Magic</h2>
+			<p>You have learned the signature power of a shaman, binding the primal power of spirits into totems. These small items are imbued with the spiritual power, and allow you to channel mystical abilities. At 2nd level, you learn two totems of your choice from the list at the end of this class description.</p>
+			<p class="indent">Some totems have a shaman level prerequisite. You must meet the prerequisite level in order to learn it. You can learn a totem at the same time you meet its prerequisites.</p>
+			<p class="indent">You learn additional totems as you gain levels in this class, as shown in the Totems Known of the Shaman Table.</p>
+			<p class="indent">Each time you finish a long rest, you can choose one of the totems you know and replace it with another totem of your choice from the list at the end of this class description.</p>
+			<h2>Primeval Conduit</h2>
+			<p>At 11th level, you can channel the magic of powerful, almost sentient spirits, manifesting as a Primeval Conduit, a spell of great spiritual power. Choose one shaman spell of 6th-level or lower as your Primeval Conduit . You can cast this Conduit spell once, at 6th-level, without expending a spell slot.</p>
+			<p class="indent">Each time you gain a level, you can replace one of your Primeval Conduits with another shaman spell of your choice.</p>
+			<p class="indent">As you gain levels in this class, you learn more shaman spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all expended uses of your Primeval Conduit spells when you finish a long rest.</p>
+			<p class="indent">Your Primeval Conduit spells don't count against your total number of Spells Known. If you selected a spell of 5th-level or lower to be upcast as one of your Primeval Conduit spells, you cannot cast it using your Primal Magic spell slots unless it is also one of your Spells Known.</p>
+			<h2>Spiritual Ascentsion</h2>
+			<p>Your body is nothing more then a vessel for your ascended spirit. Starting at 20th level, you no longer age, and you are immune to all disease and the poisoned condition. If you die, roll a d20. On a roll of 10 or higher, in place of dying, you turn into a discorporate spirit with 0 hit points and fall unconscious. Your body disappears, but anything you were wearing or carrying falls to the ground. 1d4 days later, you appear at a place of your choice, on the plane where you would have died, having gained all the benefits of a long rest.</p>
+		</description>
+	</element>
+</elements>

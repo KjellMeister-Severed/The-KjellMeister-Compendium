@@ -7,6 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="test1" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/test1.xml" />
+		<file name="shaman" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/shaman.xml" />
 	</files>
 </index>
