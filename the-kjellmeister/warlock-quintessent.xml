@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Quintessent</name>
+        <update version="1.0.0">
+            <file name="warlock-quintessent.xml" url=""/>
+        </update>
+    </info>
+    <element name="The Quintessent" type="Archetype" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_QUINTESSENT">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>
+                Your patron is an exceptionally powerful storm giant, who in
+                an attempt to extend their existance beyond their natural
+                lifespan has melded their essence wih the forces of the
+                natural world, becoming one with the elements and
+                commanding them as an extension of their being, a power
+                that has now been bestowed onto you. Their ascencion
+                although granting them great power over the forces of nature,
+                has also confined them to the form of a perpetual storm
+                allowing them to coalesce for only brief moments at a time,
+                so quintessents who grant a portion of their power to mortals
+                generally seek to gain further influence upon the material
+                world they are now detached from.
+            </p>
+        </description>
+        <sheet>
+            <description>Your patron is a powerful being of the Cloud Giant Clan.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_NAME_OF_THE_WIND" level="1" />
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_RIDE_THE_LIGHTING" level="1" />
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_WIND_WALKER" level="6"/>
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_PERFECT_CONDUIT" level="10"/>
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_STORM_BRINGER" level="14"/>
+        </rules>
+    </element>
+    <element name="Expanded Spell List" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_EXPANDED_SPELL_LIST">
+        <supports>Warlock</supports>
+        <description>
+            <p>
+                The Quintessent lets you choose from an expanded list of
+                spells when you learn a spell. The following spells are added
+                to the warlock spell list for you.
+            </p>
+        </description>
+        <sheet display="false">
+            <description>The quintessent lets you choose from an expanded list of spells when you learn a warlock spell</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_XGTE_SPELL_ZEPHYR_STRIKE</extend>
+            <extend>ID_PHB_SPELL_THUNDEROUS_SMITE</extend>
+            <extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+            <extend>ID_POTA_SPELL_WARDINGWIND</extend>
+            <extend>ID_PHB_SPELL_CALL_LIGHTNING</extend>
+            <extend>ID_PHB_SPELL_WIND_WALL</extend>
+            <extend>ID_PHB_SPELL_ICE_STORM</extend>
+            <extend>ID_XTGE_SPELL_STORM_SPHERE</extend>
+            <extend>ID_PHB_SPELL_COMMUNE_WITH_NATURE</extend>
+            <extend>ID_POTA_SPELL_CONTROLWINDS</extend>
+        </spellcasting>
+    </element>
+    <element name="The Name Of The Wind" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_NAME_OF_THE_WIND">
+        <description>
+            <p> 
+                At 1st level you learn how to speak, read, and write Giant and
+                Primordial. Additionally you learn the gust cantrip. It counts
+                as a warlock cantrip for you, but it doesn't count against the
+                number of warlock cantrips you know, and you can cast it as
+                a bonus action. When you cast it, you can push an object of
+                up to 10 pounds away or towards you.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL"/>
+            <grant type="Spell" id="ID_XGTE_SPELL_GUST" level="1" spellcasting="Warlock"/>
+        </rules>
+    </element>
+    <element name="Ride The Lightning" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_RIDE_THE_LIGHTING">
+        <description>
+            At 1st level your patron has bestowed upon you control over a
+            fraction of storm energy in the form of a lightning sword. You
+            can summon it as a bonus action and you can dispell it at will,
+            it is consider a simple melee weapon with which you are
+            proficient, it deals 1d8 lightning or thunder damage (your
+            choice), it has the versatile (1d10) property, and the thrown
+            (80/320) property. When you attack with it you can use your
+            Charisma modifier, instead of Strength or Dexterity, for the
+            attack and damage rolls. If you later take the Pact of the
+            Blade feature you can use your lightning sword as your pact
+            weapon.
+        </description>
+        <sheet>
+            <description>
+                Your patron has bestowed upon you control over a fraction of storm energy in the form of a lightning sword. You can summon it as a bonus action and you can dispell it at will, it is consider a simple melee weapon with which you are proficient, it deals 1d8 lightning or thunder damage (your choice), it has the versatile (1d10) property, and the thrown (80/320) property.
+            </description>
+        </sheet>
+    </element>
+    <element name="Wind Walker" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_WIND_WALKER">
+        <description>
+            <p>
+                Starting at 6th level you have learned how to control the weather to protect yourself from harm. As a bonus action you can summon a whirlwind around you that persists until the end of your next turn, while it is active you gain the benefits of 1/2 cover, and the area around 10 feet of you is enveloped in strong wind. This 10 foot area moves with you.
+            </p>
+        </description>
+        <sheet>
+            <description>
+                <div> Starting at 6th level you have learned how to control the weather to protect yourself from harm. As a bonus action you can summon a whirlwind around you that persists until the end of your next turn, while it is active you gain the benefits of 1/2 cover, and the area around 10 feet of you is enveloped in strong wind. This 10 foot area moves with you. <p>You can end the whirlwind early to produce one of the following effects:</p> <p>The winds blows behind you, boosting your step. When you move, you can increase your speed by 15 feet until the end of your movement </p> <p>The winds carry you in their embrace. As a bonus action you can make a jump tripling your jumping distances for the duration of it, you take no damage upon landing</p> <p>The winds hold you aloft, softening your landing. When you fall you can use your reaction to reduce the damage of your fall by an amount equal to five times you warlock level.</p> <p>You can use this feature {{charisma:modifier}} times and regain all uses after a long rest.</p> </div>
+            </description>
+        </sheet>
+    </element>
+    <element name="Perfect Conduit" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_PERFECT_CONDUIT">
+        <description>
+            Beginning at 10th level you can channel even greater elemental energy through yourself. <b> Any damage you deal ignores resistance to lightning and thunder damage, and treats immunity to lightning or thunder damage as resistance instead. </b> Additionally you can cast the spell absorb elements at will, but only against lightning or thunder damage. 
+        </description>
+        <sheet>
+            <description>Beginning at 10th level, <b>Any damage you deal ignores resistance to lightning and thunder damage.</b> You can also cast the spell <b>absorb elements</b> at will. But only on lightning or thunder damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_POTA_SPELL_ABSORBELEMENTS"/>
+        </rules>
+    </element>
+    <element name="Storm Bringer" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_STORM_BRINGER">
+        <description>
+            At 14th level you can call forth the full force of the elements in the form of a mighty storm. As an action you can summon a storm of 30 feet centered around you for 10 minutes, or until you dismiss it as a bonus action. The area of the storm moves with you. While the storm lasts, you gain a flight speed equal to your walking speed as long as you are sorrounded by strong winds. Every hostile creature that enters, or starts it's turn within the storm's range must make a Dexterity saving throw against your spell save DC. On a failure they take 3d10 lightning damage, or half as much on a success. Once you use this feature you can't use it again until you finish a long rest. 
+        </description>
+        <sheet>
+            <description>
+                At 14th level you can call forth the full force of the elements in the form of a mighty storm. <b>As an action you can summon a storm of 30 feet centered around you for 10 minutes, or until you dismiss it as a bonus action. </b> The area of the storm moves with you. While the storm lasts, you gain a flight speed equal to your walking speed as long as you are sorrounded by strong winds. Every hostile creature that enters, or starts it's turn within the storm's range must make a Dexterity saving throw against your spell save DC. On a failure they take 3d10 lightning damage, or half as much on a success. Once you use this feature you can't use it again until you finish a long rest. 
+            </description>
+        </sheet>
+    </element>
+</elements>
