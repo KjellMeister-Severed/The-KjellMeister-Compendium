@@ -284,7 +284,7 @@
 	</element>
 
 	<!--Classic Ability Score Improvement-->
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_KJELLMEISTER_SHAMAN_ABILITYSCOREIMPROVEMENT">
+	<element name="Ability Score Improvement" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_SHAMAN_ABILITYSCOREIMPROVEMENT">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -298,5 +298,11 @@
 			<select type="Class Feature" name="Improvement Option (Shaman 19)" supports="Improvement Option,Shaman,19" level="19" />
 		</rules>
 	</element>
-
+	
+	<!-- Totemic Magic -->
+	<element name="test_totem" type="Class Feature" source="Class Feature" id="ID_KJELLMEISTER_SHAMAN_TOTEMIC_MAGIC">
+		<description>
+			<p></p>
+		</description>	
+	</element>
 </elements>
