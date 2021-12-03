@@ -8,5 +8,6 @@
 	</info>
 	<files>
 		<file name="shaman" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/shaman.xml" />
+		<file name="warlock-quintessent" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/warlock-quintessent.xml" />
 	</files>
 </index>
