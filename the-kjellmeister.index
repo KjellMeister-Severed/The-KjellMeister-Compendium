@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>The Kjellmeister Compendium</name>
-		<update version="1.0.0">
+		<update version="4.1.0">
 			<file name="the-kjellmeister.index" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister.index" />
 		</update>
 	</info>
