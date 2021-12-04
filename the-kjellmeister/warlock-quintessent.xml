@@ -104,7 +104,7 @@
                 Starting at 6th level you have learned how to control the weather to protect yourself from harm. As a bonus action you can summon a whirlwind around you that persists until the end of your next turn, while it is active you gain the benefits of 1/2 cover, and the area around 10 feet of you is enveloped in strong wind. This 10 foot area moves with you.
             </p>
         </description>
-        <sheet>
+        <sheet usage="{{charisma:modifier+1}}/Short Rest">
             <description>
                 <div> Starting at 6th level you have learned how to control the weather to protect yourself from harm. As a bonus action you can summon a whirlwind around you that persists until the end of your next turn, while it is active you gain the benefits of 1/2 cover, and the area around 10 feet of you is enveloped in strong wind. This 10 foot area moves with you. <p>You can end the whirlwind early to produce one of the following effects:</p> <p>The winds blows behind you, boosting your step. When you move, you can increase your speed by 15 feet until the end of your movement </p> <p>The winds carry you in their embrace. As a bonus action you can make a jump tripling your jumping distances for the duration of it, you take no damage upon landing</p> <p>The winds hold you aloft, softening your landing. When you fall you can use your reaction to reduce the damage of your fall by an amount equal to five times you warlock level.</p> <p>You can use this feature {{charisma:modifier}} times and regain all uses after a long rest.</p> </div>
             </description>
@@ -118,17 +118,104 @@
             <description>Beginning at 10th level, <b>Any damage you deal ignores resistance to lightning and thunder damage.</b> You can also cast the spell <b>absorb elements</b> at will. But only on lightning or thunder damage.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_POTA_SPELL_ABSORBELEMENTS"/>
+            <grant type="Spell" id="ID_POTA_SPELL_ABSORBELEMENTS" spellcasting="Warlock"/>
         </rules>
     </element>
     <element name="Storm Bringer" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_QUINTESSENT_STORM_BRINGER">
         <description>
             At 14th level you can call forth the full force of the elements in the form of a mighty storm. As an action you can summon a storm of 30 feet centered around you for 10 minutes, or until you dismiss it as a bonus action. The area of the storm moves with you. While the storm lasts, you gain a flight speed equal to your walking speed as long as you are sorrounded by strong winds. Every hostile creature that enters, or starts it's turn within the storm's range must make a Dexterity saving throw against your spell save DC. On a failure they take 3d10 lightning damage, or half as much on a success. Once you use this feature you can't use it again until you finish a long rest. 
         </description>
-        <sheet>
+        <sheet usage="1/Long Rest">
             <description>
                 At 14th level you can call forth the full force of the elements in the form of a mighty storm. <b>As an action you can summon a storm of 30 feet centered around you for 10 minutes, or until you dismiss it as a bonus action. </b> The area of the storm moves with you. While the storm lasts, you gain a flight speed equal to your walking speed as long as you are sorrounded by strong winds. Every hostile creature that enters, or starts it's turn within the storm's range must make a Dexterity saving throw against your spell save DC. On a failure they take 3d10 lightning damage, or half as much on a success. Once you use this feature you can't use it again until you finish a long rest. 
             </description>
+        </sheet>
+    </element>
+    <element name="Shield of the Sylphids" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_SHIELD_SYLPHIDS">
+        <supports>Eldritch Invocation</supports>
+        <description>
+            <p>Whenever a creature would make a melee attack roll against you, while you are in an area with strong wind, you can use your reaction to impose disadvantage to the attack roll </p>
+        </description>
+        <sheet>
+            <description>
+                <p>Whenever a creature would make a melee attack roll against you, while you are in an area with strong wind, you can use your reaction to impose disadvantage to the attack roll </p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Speed of Raijin" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_SPEED_RAIJIN">
+        <supports>Eldritch Invocation</supports>
+        <description>
+            <p>You don't produce attacks of opportunity from a creature if you have dealt lightning or thunder damage to it this turn. Attacks of opportunity made against you are done at a disadvantage if your walking speed is 40 feet or higher. </p>
+        </description>
+        <sheet>
+            <description>
+                <p>You don't produce attacks of opportunity from a creature if you have dealt lightning or thunder damage to it this turn. Attacks of opportunity made against you are done at a disadvantage if your walking speed is 40 feet or higher. </p>
+            </description>
+        </sheet>
+    </element>
+    <element name="The Voice Of Thunder" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_VOICE_OF_THUNDER">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Pact of the Tome</prerequisite>
+        <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+        <description>
+            <p><em>Prerequisite: Pact of the Tome feature</em></p>
+            <p>You learn the thaumaturgy cantrip, it is a warlock cantrip for you, but it doesn't count against the number of warlock cantrips you know. Additionally you learn the thunderwave spell, it is a warlock spell for you, but it doesn't count against the number of warlock spells you know, and you can cast it once at 1st level without expending a spell slot. Once you cast it in this way you can't do so again until you finish a short or long rest. </p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You learn the thaumaturgy cantrip, it is a warlock cantrip for you, but it doesn't count against the number of warlock cantrips you know. Additionally you learn the thunderwave spell, it is a warlock spell for you, but it doesn't count against the number of warlock spells you know, and you can cast it once at 1st level without expending a spell slot. Once you cast it in this way you can't do so again until you finish a short or long rest. </description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Warlock"/>
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Warlock"/>
+        </rules>
+    </element>
+    <element name="Spear of The Heavens" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_SPEAR_OF_THE_HEAVENS">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>level 7, Pact of the Tome</prerequisite>
+        <requirements>[level:7],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+        <description>
+            <p><em>Prerequisite: 7th level, Pact of the Blade feature</em></p>
+            <p>If you fall more than 20 feet, you can use your action to force every creature within a 20 foot radius centered in the point of your landing to make a Dexterity saving throw against your spell save DC. On a failure they take 2d10 lightning damage, or half as much on a success. </p>
+        </description>
+        <sheet>
+            <description>If you fall more than 20 feet, you can use your action to force every creature within a 20 foot radius centered in the point of your landing to make a Dexterity saving throw against your spell save DC. On a failure they take 2d10 lightning damage, or half as much on a success. </description>
+        </sheet>
+    </element>
+    <element name="Storm Servant" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_STORM_SERVANT">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>10th level, Pact of the Chain feature</prerequisite>
+		<requirements>[level:10],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
+        <description>
+			<p><em>Prerequisite: 10th level, Pact of the Chain feature</em></p>
+            <p>As an action you can transform your familiar into an air elemental (found on Monster Manual pg.124). You can command it as normal, and it reverts back to it's original form after 5 minutes, or when it is reduced to 0 hit points. Once you use this feature you can't use it again until you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action you can transform your familiar into an air elemental (found on Monster Manual pg.124). You can command it as normal, and it reverts back to it's original form after 5 minutes, or when it is reduced to 0 hit points. Once you use this feature you can't use it again until you finish a long rest. </description>
+        </sheet>
+    </element>
+    <element name="Residence of the Jotun" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_RESIDENCE_JOTUN">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>12th level</prerequisite>
+        <requirements>[level:12]</requirements>
+        <description>
+            <p>You can cast the druid grove once using a warlock spell slot. You can't do so again until you finish a long rest. When cast in this way you can place wind walls or gusts of wind in up to four locations of your choice. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the druid grove once using a warlock spell slot. You can't do so again until you finish a long rest. When cast in this way you can place wind walls or gusts of wind in up to four locations of your choice. </description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_DRUID_GROVE" spellcasting="Warlock"/>
+        </rules>
+    </element>
+    <element name="Edge of the Wind" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_ELDRITCH_INVOCATION_EDGE_OF_THE_WIND">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>7th level</prerequisite>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Whenever you would force a creature to move, you can inflict an additional 1d6 slashing damage to that creature for every 10 feet it was moved.  </p>
+        </description>
+        <sheet>
+            <description>Whenever you would force a creature to move, you can inflict an additional 1d6 slashing damage to that creature for every 10 feet it was moved. </description>
         </sheet>
     </element>
 </elements>
