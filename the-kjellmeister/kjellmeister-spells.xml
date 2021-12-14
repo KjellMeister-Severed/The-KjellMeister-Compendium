@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells</name>
-        <update version="0.0.2">
+        <update version="0.1.0">
             <file name="kjellmeister-spells.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/kjellmeister-spells.xml" />
         </update>
     </info>
