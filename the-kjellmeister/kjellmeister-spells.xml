@@ -28,4 +28,47 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Draconic Transformation" type="Spell" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_SPELL_DRACONIC_TRANSFORMATION">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>With a roar, you draw on the magic of dragons to transform yourself, taking on draconic features, You gain the following benefits untill the spell ends.</p>
+            <p class="indent"><strong>Blindsight:</strong> You have blindsight with a range of 30ft, within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature, unless the creature successfully hides from you.</p>
+            <p class="indent"><strong>Breath Weapon:</strong> When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 60 foot cone. Each creature in that area must make a Dexterity saving throw, taking 6d8 force damage on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent"><strong>Wings:</strong> Incorporeal wings sprout from your back, giving you a flying speed of 60 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a statuette of a dragon, worth at least 500gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fizban's Platinum Shield" type="Spell" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_SPELL_FIZBANS_PLATINUM_SHIELD">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
