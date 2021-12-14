@@ -7,7 +7,25 @@
             <file name="kjellmeister-spells.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/kjellmeister-spells.xml" />
         </update>
     </info>
-    
-    
-    
+    <element name="Ashardalon's Stride" type="Spell" source="The Kjellmeister Compendium" id="ID_KJELLMEITER_SPELL_ASHARDALONS_STRIDE">
+        <supports>Artificer, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your speed increases by 20ft. and moving doesn't provoke opportunity attacks. When you move within 5 feet of a creature or an object that isn't being worn or carried, it takes 1d6 fire damage from your trail of heat. A creature or object can take this damage only once during a turn.</p>
+            <p class="indent">When you use this spell using a spellslot of 4th level or higher, increase your speed by 5ft for each spell slot level above third. The spell also deals an additional 1d6 fire damage for each slot above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
