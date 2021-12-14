@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
         <name>Spells</name>
@@ -75,23 +74,30 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Nathair's Mischief" type="Spell" source="The Kjellmeister Compendium" id="ID_author_source_SPELL_Nathair's Mischief">
-        <supports>supports</supports>
+    <element name="Nathair's Mischief" type="Spell" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_SPELL_NATHAIRS_MISCHIEF">
+        <supports>Bard, Sorcerer, Wizard</supports>
         <description>
-            <p></p>
+            <p>You fill a 20-foot cube you can see within range with fey and draconic magic. Roll on the Mischievous Surge table to determine the magical effect produced, and roll again at the start of each of your turns until the spell ends. You can move the cube up to 10 feet before your roll.</p>
+            <table>
+                <tr><td>d4</td><td>Effect</td></tr>
+                <tr><td>1</td><td>The smell of apple pie fills the air, and each creature in the cube must succeed on a Wisdom saving throw or become charmed by you until the start of your next turn.</td></tr>
+                <tr><td>2</td><td>Bouquets of flowers appear all around, and each creature in the cube must succeed on a Dexterity saving throw or be blinded until the start of your next turn as the flowers spray water in their faces.</td></tr>
+                <tr><td>3</td><td>Each creature in the cube must succeed on a Wisdom saving throw or begin giggling until the start of your next turn. A giggling creature is incapacitated and uses all its movement to move in a random direction.</td></tr>
+                <tr><td>4</td><td>Drops of molasses hover in the cube, making it difficult terrain until the start of your next turn.</td></tr>
+            </table>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Evocation</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
+            <set name="level">2</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to one minute</set>
+            <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a piece of crust from an apple pie</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
