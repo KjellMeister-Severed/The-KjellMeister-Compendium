@@ -54,6 +54,30 @@
     <element name="Fizban's Platinum Shield" type="Spell" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_SPELL_FIZBANS_PLATINUM_SHIELD">
         <supports>Sorcerer, Wizard</supports>
         <description>
+            <p>You create a field of silvery light that surronds a creature of your choice within range. The field sheds dim light out to 5 feet. While surrounded by the field, a creature gains the following benefits:</p>
+            <p class="indent"><strong>Cover:</strong> The creature has half cover.</p>
+            <p class="indent"><strong>Damage Resistance: </strong> The creature has resistance to acid, cold, fire, lightning, and poison damage. </p>
+            <p class="indent"><strong>Evasion:</strong> If the creature is subjected to an effect that allows to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw and only half damage if it fails.</p>
+            <p>As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a platinum-plated dragon scale, worth at least 500gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Nathair's Mischief" type="Spell" source="The Kjellmeister Compendium" id="ID_author_source_SPELL_Nathair's Mischief">
+        <supports>supports</supports>
+        <description>
             <p></p>
         </description>
         <setters>
