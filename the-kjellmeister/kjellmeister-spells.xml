@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spells</name>
+        <update version="0.0.1">
+            <file name="kjellmeister-spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/kjellmeister-spells.xml" />
+        </update>
+    </info>
+    
+    
+    
+</elements>
