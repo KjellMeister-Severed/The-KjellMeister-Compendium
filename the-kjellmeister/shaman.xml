@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Shaman</name>
-		<update version="2.2.0">
+		<update version="3.0.0">
 			<file name="Shaman.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/Shaman.xml" />
 		</update>
 	</info>
