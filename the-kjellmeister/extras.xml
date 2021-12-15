@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<elements>
+    <info>
+        <name>Extra's</name>
+        <update version="0.1.0">
+            <file name="extras.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/extras.xml" />
+        </update>
+    </info>
+    <element name="Telepathic" type="Feat" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_FEAT_PSYCHIC">
+        <description>
+            <p>You awaken the ability to mentally connect with others, granting you the following benefits:</p>
+            <p class="indent">Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+            <p class="indent">You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature to respond to you telepathically.</p>
+            <p class="indent">You can cast the Detect Thoughts spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability increased by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them.</p>
+        </description>
+        <sheet>
+            <description>
+                <p><strong>You can speak telepathically to any creature you can see within 60ft of you. </strong> Only in languages you speak and the creature cant respond.</p>
+                <p><strong>You can cast detect thoughts at will.</strong> You can only use this feature once per long rest. You may also use spell slots of 2nd level and above to cast it.</p>
+            </description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Telepathic)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+        </rules>
+    </element>
+</elements>
