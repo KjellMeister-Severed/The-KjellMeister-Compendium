@@ -10,5 +10,6 @@
 		<file name="shaman.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/shaman.xml" />
 		<file name="warlock-quintessent.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/warlock-quintessent.xml" />
 		<file name="kjellmeister-spells.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/kjellmeister-spells.xml" />
+		<file name="extras.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/extras.xml" />
 	</files>
 </index>
