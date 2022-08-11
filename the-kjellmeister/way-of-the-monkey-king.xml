@@ -80,4 +80,61 @@
 		<rules>
 		</rules>
 	</element>
+	<element name="Ruyi Jingu Bang" type="Magic Item" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ITEM_RUYI_JINGU_BANG">
+		<description>
+			<p>
+				Originally wielded by the immortal monkey Sun
+				Wukong. Ao Guang, the Dragon King of the
+				East Sea gave this weapon, which he taught to
+				be a useless iron pillar, as a gift when Monkey
+				King came looking for a magic weapon to
+				match his strength and skill.
+			</p>
+			<p class="indent">
+				While wielding your morphing staff you can use your staff
+				in place of your martial arts and flurry of blows attacks. The
+				damage die for these specific attacks follows your martial
+				arts table.
+			</p>
+			<p class="indent">
+				Additionally you gain special abilities with the staff:
+			</p>
+			<p class="indent">
+				As a bonus action you can spend 1 ki points and give your
+				Morphing Staff reach (15 ft.) for 1 minute.
+			</p>
+			<p class="indent">
+				When you critically hit with your Morphing Staff it
+				enlarges, dealing extra damage equal to your martial arts
+				die.
+			</p>
+			<p class="indent">
+				As a bonus action while holding your Morphing Staff you
+				can shrink it to the size of a toothpick, allowing for easy
+				carry. You can use a bonus action to revert it to its normal
+				size.
+			</p>
+			<p class="indent">
+				At 6th level attacks with your Morphing Staff count as
+				magical for the purpose of overcoming resistances.
+			</p>
+		</description>
+		<setters>
+			<set name="category">
+				Wondrous Items
+			</set>
+			<set name="cost" currency="gp">
+				0
+			</set>
+			<set name="weight" lb="0">
+				0 lb.
+			</set>
+			<set name="type">
+				Wondrous Item
+			</set>
+			<set name="rarity">
+				Unique
+			</set>
+		</setters>
+	</element>
 </elements>
