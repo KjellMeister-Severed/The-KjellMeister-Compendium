@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>The Kjellmeister Compendium</name>
+		<name>
+			The Kjellmeister Compendium
+		</name>
 		<update version="5.0.0">
 			<file name="the-kjellmeister.index" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister.index" />
 		</update>
@@ -11,5 +13,6 @@
 		<file name="warlock-quintessent.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/warlock-quintessent.xml" />
 		<file name="kjellmeister-spells.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/kjellmeister-spells.xml" />
 		<file name="extras.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/extras.xml" />
+		<file name="way-of-the-monkey-king.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/way-of-the-monkey-king.xml" />
 	</files>
 </index>
