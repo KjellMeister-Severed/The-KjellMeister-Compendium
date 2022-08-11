@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>
+			The Quintessent
+		</name>
+		<author url="https://homebrewery.naturalcrit.com/share/r1bMrPLTFV">
+			Kjellmeister
+		</author>
+		<update version="3.0.0">
+			<file name="way-of-the-monkey-king.xml" url="" />
+		</update>
+	</info>
+	<element name="Way of the monkey king" type="Archetype" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_MONKEY_KING">
+		<supports>
+			Monastic Tradition
+		</supports>
+		<description>
+			<p>
+				Monks who follow the way of the Monkey King hope to emulate the mythical King in his greatness. Through unorthodox teachings and manipulation of ki these monks gain a sliver of the Monkey King's powers.
+			</p>
+			<p class="indent">
+				Temples that teach the Way of the Shield are often decorated with scrolls that exalt the feats of warriors who are fearless when faced with impossible odds. Massive armies may be surprised to encounter resistance from a proud band of shield monks with less than a tenth of their numbers. Grandmasters of this tradition have even been known to stand alone against creatures many times their size.
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_SHIELD_ARESIAN_TECHNIQUE" level="3" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_SHIELD_SHIELD_DANCER" level="6" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_SHIELD_SHELL_DRAGON_TURTLE" level="11" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_SHIELD_UNDAUNTED_SPIRIT" level="17" />
+		</rules>
+	</element>
+	<element name="Morphing Staff" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_MONKEY_KING_MORPHING_STAFF">
+		<description>
+			<p>
+				Starting when you choose this Tradition at 3rd level, you can spend 1 hour with a pole weapon that you are proficient with and turn it into a personal Morphing Staff.
+			</p>
+			<p class="indent">
+				While wielding your morphing staff you can use your staff in place of your martial arts and flurry of blows attacks. The damage die for these specific attacks follows your martial arts table.
+			</p>
+			<p>
+				Additionally you gain special abilities with the staff:
+			</p>
+			<p class="indent">
+				* As a bonus action you can spend 1 ki points and give your Morphing Staff reach for 1 minute.
+				<br />
+				* When you critically hit with your Morphing Staff it enlarges, dealing extra damage equal to your martial arts die.
+				<br />
+				* As a bonus action you can call your Morphing Staff to your hand, as long as it's on the same plane of existence as you.
+				<br />
+				* As a bonus action while holding your Morphing Staff you can shrink it to the size of a toothpick, allowing for easy carry. You can use a bonus action to revert it to its normal size.
+				<br />
+				* At 6th level attacks with your Morphing Staff count as magical for the purpose of overcoming resistances.
+				<br />
+			</p>
+		</description>
+		<sheet>
+			<description>
+				<p>
+					Starting when you choose this Tradition at 3rd level, you can spend 1 hour with a pole weapon that you are proficient with and turn it into a personal Morphing Staff.
+				</p>
+				<p class="indent">
+					While wielding your morphing staff you can use your staff in place of your martial arts and flurry of blows attacks. The damage die for these specific attacks follows your martial arts table.
+				</p>
+				<p>
+					Additionally you gain special abilities with the staff:
+				</p>
+				<p class="indent">
+					* As a bonus action you can spend 1 ki points and give your Morphing Staff reach for 1 minute.
+					<br />
+					* When you critically hit with your Morphing Staff it enlarges, dealing extra damage equal to your martial arts die.
+					<br />
+					* As a bonus action you can call your Morphing Staff to your hand, as long as it's on the same plane of existence as you.
+					<br />
+					* As a bonus action while holding your Morphing Staff you can shrink it to the size of a toothpick, allowing for easy carry. You can use a bonus action to revert it to its normal size.
+					<br />
+					* At 6th level attacks with your Morphing Staff count as magical for the purpose of overcoming resistances.
+					<br />
+				</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<stat name="ac:calculation" value="ac:unarmored defense monk" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Monk)" />
+			<stat name="innate speed:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none]" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none]" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none]" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none]" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none]" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+</elements>
