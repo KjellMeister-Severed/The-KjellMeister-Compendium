@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Dracomancer</name>
+        <update version="3.0.0">
+			<file name="Dracomancer.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/Dracomancer.xml" />
+		</update>
+    </info>
+</elements>
