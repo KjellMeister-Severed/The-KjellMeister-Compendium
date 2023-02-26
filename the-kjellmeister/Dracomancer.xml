@@ -6,4 +6,661 @@
 			<file name="Dracomancer.xml" url="https://raw.githubusercontent.com/KjellMeister-Severed/The-KjellMeister-Compendium/master/the-kjellmeister/Dracomancer.xml" />
 		</update>
     </info>
+    <element name="Dracomancer" type="Class" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_DRACOMANCER">
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <!-- GEAR PROFICIENCY -->
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+
+            <!-- SAVING THROWS -->
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+
+            <!-- SKILL PROFICIENCY FROM CLASS -->
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+
+            <!-- DRACOMANCER FEATURES -->
+            <grant type="Class Feature" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_DRAGON" level="1" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_DRACONIC_LEGACY" level="1" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_SPELLCASTING" level="2" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_ARCANE_ANATOMY" level="2" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_MYSTIC_GROWTH" level="3" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_DRACOMANCER_ABILITYSCOREIMPROVEMENT" level="4" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_ARCANUM_STRIKES" level="9" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_SCALED_SCOURGE" level="11" />
+            <grant type="Class Feature" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_ANCIENT_WYRM" level="18" />
+        </rules>
+    </element>
+
+    <element name="Draconic Legacy" type="Class Feature" source="source" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_DRACONIC_LEGACY">
+        <description>
+            <p>Also at 1st level, you and your dragon embody a great draconic legacy. Your choice grants you features when you choose it at 1st level and again at 2nd, 6th, 10th, and 14th level.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+			<select type="Archetype" name="Draconic Legacy" supports="Draconic Legacy" level="1" />
+		</rules>
+    </element>
+
+    <element name="Spellcasting" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_SPELLCASTING">
+        Dracomancer
+        <description>
+            <p>Your innate connection dragons and their magical souls
+            infuses you with arcane magic. This font of magic fuels your
+            spells. See chapter 10 of the Player's Handbook for the
+            general rules of spellcasting and the end of this document for
+            the dracomancer spell list..</p>
+        </description>
+        <sheet display="false">
+            <description>Dracomancer lets you choose from an expanded list of spells when you learn a dracomancer spell.</description>
+        </sheet>
+        <spellcasting name="Dracomancer" ability="Charisma" allowReplace="true">
+            <list>Dracomancer</list>
+        </spellcasting>
+        <rules>
+            <stat name="dracomancer:spellcasting:slots:1" value="2" level="2" />
+			<stat name="dracomancer:spellcasting:slots:2" value="2" level="5" />
+			<stat name="dracomancer:spellcasting:slots:3" value="2" level="9" />
+			<stat name="dracomancer:spellcasting:slots:4" value="2" level="13" />
+			<stat name="dracomancer:spellcasting:slots:5" value="2" level="17" />
+
+            <stat name="dracomancer:spellcasting:prepare" value="charisma:modifier" />
+			<stat name="dracomancer:spellcasting:prepare" value="level:dracomancer" />
+
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Dracomancer" />
+			<select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="Dracomancer" />
+			<select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Dracomancer" />
+            <select type="Spell" name="Spellbook (Dracomancer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Dracomancer" />
+        </rules>
+    </element>
+
+    <element name="Mystic Growth" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_MYSTIC_GROWTH">
+        <description>
+            <p>At 3rd level, your magic grows in harmony with the growth of your dragon. You learn two cantrips from the sorcerer spell list. One of these cantrips must require an attack roll or saving throw and it must deal the same type of damage as your companion's draconic element.</p>
+        </description>
+        <sheet>
+            <description>At 3rd level, your magic grows in harmony with the growth of your dragon. You learn two cantrips from the sorcerer spell list. One of these cantrips must require an attack roll or saving throw and it must deal the same type of damage as your companion's draconic element.</description>
+        </sheet>
+        <rules>
+			<select type="Spell" name="Cantrip (Mystic Growth)" spellcasting="Dracomancer" level="3" supports="0,Sorcerer" />
+            <select type="Spell" name="Cantrip (Mystic Growth)" spellcasting="Dracomancer" level="3" supports="0,Sorcerer" />
+		</rules>
+    </element>
+
+    <element name="Ability Score Improvement" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_DRACOMANCER_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Dracomancer 4)" supports="Improvement Option,Dracomancer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Dracomancer 8)" supports="Improvement Option,Dracomancer,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Dracomancer 12)" supports="Improvement Option,Dracomancer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Dracomancer 16)" supports="Improvement Option,Dracomancer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Dracomancer 19)" supports="Improvement Option,Dracomancer,19" level="19" />
+		</rules>
+	</element>
+
+    <element name="Extra Attack" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+    <element name="Arcanum Strikes" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_ARCANUM_STRIKES">
+		<description>
+			<p>At 9th level, your draconic companion's bite, claw, and tail attacks are considered magical for overcoming resistances. Additionally, when your draconic companion hit with an attack using its bite, claw or tail, it adds your proficiency bonus to the damage.</p>
+		</description>
+		<sheet>
+			<description>At 9th level, your draconic companion's bite, claw, and tail attacks are considered magical for overcoming resistances. Additionally, when your draconic companion hit with an attack using its bite, claw or tail, it adds your proficiency bonus to the damage.</description>
+		</sheet>
+	</element>
+    
+    <element name="Arcane Anatomy" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_ARCANE_ANATOMY">
+        <description>
+            <p>Also at 2nd level, your connection to dragons seeps into your
+            physical form. You gain resistance to your dragon's draconic
+            element, and you gain darkvision out to a range of 60 feet. If
+            you already have darkvision from your race, its range
+            increases by 30 feet.</p>
+        </description>
+        <sheet display="true">
+            <description>Also at 2nd level, your connection to dragons seeps into your physical form. You gain resistance to your dragon's draconic element, and you gain darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet.</description>
+        </sheet>
+		<rules>
+            <grant type="Class Feature" id="ID_VISION_DARKVISION"/>
+			<stat name="darkvision:range" value="120"/>
+		</rules>
+    </element>
+
+    <element name="Scaled Scourge" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_SCALED_SCOURGE">
+        <description>
+            <p>Beginning at 11th level, you continue to harmonize with the raw arcane might of your dragon. You gain blindsight out to 10 feet and are now immune to your companion's draconic element. Additionally, you have also taken on a dragon's immortality and cease aging, and cannot be aged magically.</p>
+        </description>
+        <sheet display="true">
+            <description>Beginning at 11th level, you continue to harmonize with the raw arcane might of your dragon. You gain blindsight out to 10 feet and are now immune to your companion's draconic element. Additionally, you have also taken on a dragon's immortality and cease aging, and cannot be aged magically.</description>
+        </sheet>
+		<rules>
+            <grant type="Class Feature" id="ID_VISION_BLINDSIGHT"/>
+			<stat name="blindsight:range" value="10"/>
+		</rules>
+    </element>
+
+    <element name="Draconic Bloodlust" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_DRACOMANCER_ARCHETYPE_FEATURE_DRACONIC_BLOODLUST">
+        <description>
+            <p>At 6th level, your hellkite's ferocity grows more aggressive with each kill. Whenever your draconic companion scores a critical hit, or drops a creature to 0 hit points, it gains temporary hit points equal to your dracomancer level. It can then move up to its walking speed towards another hostile creature.</p>
+        </description>
+        <sheet>
+            <description>At 6th level, your hellkite's ferocity grows more aggressive with each kill. Whenever your draconic companion scores a critical hit, or drops a creature to 0 hit points, it gains temporary hit points equal to your dracomancer level. It can then move up to its walking speed towards another hostile creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Visage of Terror" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_DRACOMANCER_ARCHETYPE_FEATURE_VISAGE_OF_TERROR">
+        <description>
+            <p>At 14th level, your draconic companion's aggression strikes terror into the hearts of others. Creatures have disadvantage on saving throws made against your hellkite's frightful presence. When a creature fails a saving throw against your hellkite's frightful presence, its speed is reduced to 0 until it succeeds on the save, or the effect ends.</p>
+        </description>
+        <sheet>
+            <description>At 14th level, your draconic companion's aggression strikes terror into the hearts of others. Creatures have disadvantage on saving throws made against your hellkite's frightful presence. When a creature fails a saving throw against your hellkite's frightful presence, its speed is reduced to 0 until it succeeds on the save, or the effect ends.</description>
+        </sheet>
+    </element>
+
+    <element name="Sky Terror" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_SKY_TERROR">
+        <description>
+            <p>At 15th level, the true power of your draconic companion is brought to bear. It gains the following benefits. Its size increases to Huge. Its walking speed increases by 5 feet and its fly speed increases by 10 feet. The range of its bite attack increases to 10 feet. The damage of its breath weapon increases to 6d8, and its range increases to a 60-foot cone or 90-foot line. It can now use its breath weapon twice per short rest.</p>
+        </description>
+        <sheet display="true">
+            <description>At 15th level, the true power of your draconic companion is brought to bear. It gains the following benefits. Its size increases to Huge. Its walking speed increases by 5 feet and its fly speed increases by 10 feet. The range of its bite attack increases to 10 feet. The damage of its breath weapon increases to 6d8, and its range increases to a 60-foot cone or 90-foot line. It can now use its breath weapon twice per short rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Ancient Wyrm" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_CLASS_FEATURE_DRACOMANCER_ANCIENT_WYRM">
+        <description>
+            <p>At 18th level, the magic flows between you and your draconic companion as if you were the same being. Your companion can make a second attack without you needing to forgo your own extra attack. Additionally, when your companion hits a creature with an attack, you can use your reaction to make an attack against the same target.</p>
+        </description>
+        <sheet display="true">
+            <description>At 18th level, the magic flows between you and your draconic companion as if you were the same being. Your companion can make a second attack without you needing to forgo your own extra attack. Additionally, when your companion hits a creature with an attack, you can use your reaction to make an attack against the same target.</description>
+        </sheet>
+    </element>
+
+    <!-- DRACONIC LEGACIES -->
+    <element name="Hellkite" type="Archetype" source="source" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_DRACONIC_LEGACY_HELLKITE">
+        <supports>Draconic Legacy</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Fighting Style" supports="Fighting Style, Dracomancer" level="1"/>
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_PHYSICALLY_AGGRESSIVE" level="1" />
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_DRACOMANCER_ARCHETYPE_FEATURE_HELLKITE_SPELLS" level="2" />
+            <select type="Class Feature" name="Fighting Style" supports="Fighting Style, Dracomancer" level="10"/>
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_DRACOMANCER_ARCHETYPE_FEATURE_VISAGE_OF_TERROR" level="14" />
+		</rules>
+    </element>
+
+    <element name="Hellkite Spells" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_DRACOMANCER_ARCHETYPE_FEATURE_HELLKITE_SPELLS">
+		<description>
+			<p>At 2nd level, you learn additional spells when you reach certain levels in this class, as shown in the Hellkite Legacy Spells table. These spells counts as dracomancer spells for you, but don't count against the number of dracomancer spells you know.</p>
+			<h5 class="caption">HELLKITE SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Dracomancer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>hunter's mark, zephyr strike</em></td></tr>
+				<tr><td>5th</td><td><em>branding smite, hellkite wing buffet</em></td></tr>
+				<tr><td>9th</td><td><em>fear, haste</em></td></tr>
+				<tr><td>13th</td><td><em>freedom of movement, slayer cyclone</em></td></tr>
+				<tr><td>17th</td><td><em>destructive wave, skill empowerment</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KJELLMEITER_SPELL_HELLKITES_WING_BUFFET" level="5" spellcasting="Dracomancer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Dracomancer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Dracomancer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="5" spellcasting="Dracomancer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" level="2" spellcasting="Dracomancer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="2" spellcasting="Dracomancer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Dracomancer" prepared="true" />
+		</rules>
+	</element>
+
+    <element name="Dracomancer’s Companion" type="Class Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_DRAGON">
+		<description>
+            <p>Beginning at 1st level you have created a mystical bond with
+            a dragon you have raised from birth. This dragon is one of
+            many true dragons, as shown in the Draconic Companion
+            table. Your choice of dragon species will determine its
+            draconic element, its special movement, and the shape and
+            saving throw associated with its breath weapon. The
+            draconic element of your companion will determine its
+            damage immunity, the damage of its breath weapon, and will
+            be used in various class features. Your dragon can use its
+            breath weapon once, and regains all uses when you finish a
+            short or long rest.</p>
+            <p class="indent">
+                In combat, your companion has its own initiative, but can
+                change its initiative to match your own. You can command it
+                verbally, no action required, and if you are incapacitated, the
+                dragon is intelligent enough to act on its own
+            </p>
+        </description>
+		<sheet>
+			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn’t take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+			While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.
+			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn’t hostile to you, either the same type of beast as before or a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Dracomancer’s Companion" supports="Dragon" />
+			<stat name="companion:ac" value="proficiency" />
+            <stat name="companion:hd" value="d10" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />			
+			<stat name="additional:hp:max" value="level:dracomancer" />
+			<stat name="additional:hp:max" value="level:dracomancer" />
+			<stat name="additional:hp:max" value="level:dracomancer" />
+			<stat name="additional:hp:max" value="level:dracomancer" />
+            <stat name="additional:hp:max" value="level:dracomancer" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>
+
+    <element name="Physically Aggressive" type="Archetype Feature" source="The Kjellmeister Compendium" id="ID_KJELLMEISTER_ARCHETYPE_FEATURE_PHYSICALLY_AGGRESSIVE">
+        <description>
+            <p>Also at 1st level, your draconic companion excels at tearing
+your foes to pieces. Your hellkite's attacks gain the following
+benefits</p>
+        </description>
+        <sheet display="false">
+            <description>Also at 1st level, your draconic companion excels at tearing
+your foes to pieces. Your hellkite's attacks gain the following
+benefits</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_CLAW_ATTACK_AGGRESSIVE" level="1" />
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_TAIL_ATTACK_AGGRESSIVE" level="1" />
+            <grant type="Archetype Feature" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BITE_ATTACK_AGGRESSIVE" level="1" />
+        </rules>
+    </element>
+
+    <element name="Aggressive Claw Attack" type="Archetype Feature" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_CLAW_ATTACK_AGGRESSIVE">
+		<description>
+			<p>Melee Weapon Attack upgrade</p>
+		</description>
+		<sheet>
+			<description>Your hellkite's bite attack scores a critical hit on a roll of 19-20.</description>
+            <description level="10">Creature's grappled in your hellkite's jaws have disadvantage on saving throws made to escape the grapple.</description>
+		</sheet>
+	</element>
+    <element name="Aggressive Tail Attack" type="Archetype Feature" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_TAIL_ATTACK_AGGRESSIVE">
+		<description>
+			<p>Melee Weapon Attack upgrade</p>
+		</description>
+		<sheet>
+			<description>Whenever your hellkite hits a creature with a claw attack, if that attack used its bonus action, it can use its reaction to make another claw attack.</description>
+            <description level="10">Whenever your hellkite makes at least three claw attacks in a single turn it can use its Frightful Presence as part of the last attack..</description>
+        </sheet>
+	</element>
+    <element name="Aggressive Bite Attack" type="Archetype Feature" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BITE_ATTACK_AGGRESSIVE">
+		<description>
+			<p>Melee Weapon Attack upgrade</p>
+		</description>
+		<sheet>
+			<description>Whenever your hellkite hits a creature with a tail attack, its speed is reduced to 0 until the end of its next turn.</description>
+            <description level="10">Whenever your hellkite hits a creature with a tail attack, it can push it back 5 feet.</description>
+		</sheet>
+	</element>
+
+    <!-- Dracomancer extra fighting styles -->
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Dracomancer</supports>
+	</append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+		<supports>Dracomancer</supports>
+	</append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Dracomancer</supports>
+	</append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Dracomancer</supports>
+	</append>
+    <element name="Crushing Dominator" type="Class Feature" source="Player’s Handbook" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_FIGHTING_STYLE_CRUSHING_DOMINATOR">
+		<supports>Fighting Style, Dracomancer</supports>
+		<description>
+			<p>When you score a critical hit against a creature with a melee
+            weapon attack that deals bludgeoning damage, that creature
+            is knocked prone, and their speed is reduced to 0 until the
+            end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you score a critical hit against a creature with a melee
+            weapon attack that deals bludgeoning damage, that creature
+            is knocked prone, and their speed is reduced to 0 until the
+            end of your next turn.</description>
+		</sheet>
+	</element>
+
+    <element name="Saddle Warrior" type="Class Feature" source="Player’s Handbook" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_FIGHTING_STYLE_SADDLE_WARRIOR">
+		<supports>Fighting Style, Dracomancer</supports>
+		<description>
+			<p>While you are mounted on a creature, you gain a +1 bonus to
+            weapon attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>While you are mounted on a creature, you gain a +1 bonus to
+            weapon attack and damage rolls</description>
+		</sheet>
+	</element>
+
+    <element name="Blade Dancer" type="Class Feature" source="Player’s Handbook" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_FIGHTING_STYLE_BLADE_DANCER">
+		<supports>Fighting Style, Dracomancer</supports>
+		<description>
+			<p>When making a melee weapon attack roll with a weapon that deals slashing damage, you score a critical hit on a roll of 19 or 20 as long as you have advantage on the attack.</p>
+		</description>
+		<sheet>
+			<description>When making a melee weapon attack roll with a weapon that deals slashing damage, you score a critical hit on a roll of 19 or 20 as long as you have advantage on the attack.</description>
+		</sheet>
+	</element>
+
+    <element name="Vicious Lancer" type="Class Feature" source="Player’s Handbook" id="ID_KJELLMEISTER_FEATURE_DRACOMANCER_FIGHTING_STYLE_VICIOUS_LANCER">
+		<supports>Fighting Style, Dracomancer</supports>
+		<description>
+			<p>When you hit a creature with a melee weapon attack that
+            deals piercing damage, if you roll the maximum result for at
+            least one of the damage dice for that weapon, the target
+            creature’s AC is reduced by 1 until the start of your next turn.
+            A creature’s AC can’t be reduced in this way more than twice.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a melee weapon attack that
+            deals piercing damage, if you roll the maximum result for at
+            least one of the damage dice for that weapon, the target
+            creature’s AC is reduced by 1 until the start of your next turn.
+            A creature’s AC can’t be reduced in this way more than twice.</description>
+		</sheet>
+	</element>
+
+    <element name="Hellkite wing buffet" type="Spell" source="The Kjellmeister Compendium" id="ID_KJELLMEITER_SPELL_HELLKITES_WING_BUFFET">
+        <supports>Dracomancer, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>For a brief moment, spectral draconic wings appear around you, forcing back your foes. Each creature within 10 feet you makes a Strength saving throw. On a failed save, a creature takes 4d4 bludgeoning damage and is pushed back 10 feet. On a successful save a creature takes half damage and isn't pushed.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d4 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (10ft.)</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+
+    <!-- Dracomancer Spell List -->
+    <!-- Level 1 -->
+    <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BURNING_HANDS">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CAUSE_FEAR">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CHARM_PERSON">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CHROMATIC_ORB">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_MAGIC">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ICE_KNIFE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_IDENTIFY">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RAY_OF_SICKNESS">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEARING_SMITE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHIELD">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_THUNDERWAVE">
+        <supports>Dracomancer</supports>
+    </append>
+
+    <!-- Level 2 -->
+    <append id="ID_PHB_SPELL_ALTER_SELF">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_THUNDERWAVE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ARCANE_LOCK">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_THUNDERWAVE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLUR">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BRANDING_SMITE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CALM_EMOTIONS">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_THOUGHTS">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_DRAGONS_BREATH">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GUST_OF_WIND">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_PERSON">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEVITATE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_NATHAIRS_MISCHIEF">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_KJELLMEISTER_SPELL_RIMES_BINDING_ICE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SCORCHING_RAY">
+        <supports>Dracomancer</supports>
+    </append>
+
+    <!-- Level 3 -->
+    <append id="ID_KJELLMEISTER_SPELL_ASHARDALONS_STRIDE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLINDING_SMITE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLAIRVOYANCE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEAR">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIREBALL">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLY">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GLYPH_OF_WARDING">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LIGHTNING_BOLT">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_WOTC_EGTW_SPELL_PULSE_WAVE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLOW">
+        <supports>Dracomancer</supports>
+    </append>
+
+    <!-- Level 4 -->
+    <append id="ID_PHB_SPELL_ARCANE_EYE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CHARM_MONSTER">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONFUSION">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMPULSION">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ELEMENTAL_BANE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DIMENSION_DOOR">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DOMINATE_BEAST">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ICE_STORM">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POLYMORPH">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_WOTC_FTOD_SPELL_RAULOTHIMS_PSYCHIC_LANCE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SECRET_CHEST">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STAGGERING_SMITE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STORM_SPHERE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_FIRE">
+        <supports>Dracomancer</supports>
+    </append>
+
+    <!-- Level 5 -->
+    <append id="ID_PHB_SPELL_BANISHING_SMITE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BIGBYS_HAND">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLOUDKILL">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONE_OF_COLD">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTROL_WINDS">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DOMINATE_PERSON">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DREAM">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_MONSTER">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEGEND_LORE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MODIFY_MEMORY">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEEMING">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STEEL_WIND_STRIKE">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SUMMON_DRACONIC_SPIRIT">
+        <supports>Dracomancer</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SYNAPTIC_STATIC">
+        <supports>Dracomancer</supports>
+    </append>
 </elements>
