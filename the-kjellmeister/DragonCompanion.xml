@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Companions</name>
+        <update version="0.0.2">
+            <file name="companions.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/companions.xml" />
+        </update>
+    </info>
+    <element name="Red Dragon" type="Companion" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_RED">
+		<supports>Familiar, Variant Familiar</supports>
+		<description></description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">16</set>
+			<set name="ac">13</set>
+            <set name="hd">d10</set>
+			<set name="hp">10</set>
+			<set name="speed">35 ft., fly 40 ft.</set>
+			<set name="languages">Infernal, Common</set>
+			<set name="skills">Deception +4, Insight +3, Persuasion +4, Stealth +5</set>
+			<set name="type">Dragon</set>
+			<set name="size">Large</set>
+			<set name="alignment">lawful evil</set>
+            <set name="challenge">BIG</set>
+            <set name="senses">Darkvision 60ft, Blindsight 10ft</set>
+			<set name="actions">ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BREATH_WEAPON,ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_CLAW_ATTACK,ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_TAIL_ATTACK,ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BITE_ATTACK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="10" bonus="base" />
+			<stat name="companion:speed" value="35" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+            <stat name="companion:speed:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+    <element name="Silver Dragon" type="Companion" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_SILVER">
+		<supports>Familiar, Variant Familiar</supports>
+		<description></description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">16</set>
+			<set name="ac">13</set>
+            <set name="hd">d10</set>
+			<set name="hp">10</set>
+			<set name="speed">35 ft., fly 40 ft., climb 30 ft.</set>
+			<set name="languages">Infernal, Common</set>
+			<set name="skills">Deception +4, Insight +3, Persuasion +4, Stealth +5</set>
+			<set name="type">Dragon</set>
+			<set name="size">Large</set>
+			<set name="alignment">lawful evil</set>
+            <set name="challenge">BIG</set>
+            <set name="senses">Darkvision 60ft, Blindsight 10ft</set>
+			<set name="actions">ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BREATH_WEAPON,ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_CLAW_ATTACK,ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_TAIL_ATTACK,ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BITE_ATTACK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="10" bonus="base" />
+			<stat name="companion:speed" value="35" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+            <stat name="companion:speed:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+    <element name="Breath Weapon" type="Companion Action" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BREATH_WEAPON">
+		<description>
+			<p>Dragon breath depending on dragon type</p>
+		</description>
+		<sheet>
+			<description>The draconic companion exhales a powerful breath weapon using its draconic element in either a line or cone. A creature caught in the area must make a saving throw equal to 8 + your draconic companion's Constitution modifier + your Proficiency Bonus. On a failed save, a creature takes 2d8 damage of its draconic element. A creature takes half as much damage on a successful save. Line range is 60 ft,  </description>
+		</sheet>
+	</element>
+    <element name="Claw Attack" type="Companion Action" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_CLAW_ATTACK">
+		<description>
+			<p>Melee Weapon Attack</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your proficiency bonus + its Strength modifier to hit, Reach 5ft., one target. Hit: 1d6 + its Strength modifier slashing damage. After the attack, the draconic companion can make a second claw attack as a bonus action.</description>
+		</sheet>
+	</element>
+    <element name="Tail Attack" type="Companion Action" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_TAIL_ATTACK">
+		<description>
+			<p>Melee Weapon Attack</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your proficiency bonus + its Strength modifier to hit, Reach 10ft., one target. Hit: 1d8 + its Strength modifier bludgeoning damage. On a hit, the target makes a Strength saving throw equal to 8 + the draconic companion's Strength modifier + your proficiency bonus. On a failed save it is knocked prone.</description>
+		</sheet>
+	</element>
+    <element name="Bite Attack" type="Companion Action" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BITE_ATTACK">
+		<description>
+			<p>Melee Weapon Attack</p>
+		</description>
+		<sheet>
+			<description>The draconic companion exhales a powerful breath weapon using its draconic element in either a line or cone. A creature caught in the area must make a saving throw equal to 8 + your draconic companion's Constitution modifier + your Proficiency Bonus. On a failed save, a creature takes 2d8 damage of its draconic element. A creature takes half as much damage on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Frightful Presence" type="Companion Action" source="Monster Manual" id="ID_KJELLMEISTER_DRACOMANCER_COMPANION_ACTION_BITE_ATTACK">
+		<description>
+			<p>Frightful Presence</p>
+		</description>
+		<sheet>
+			<description>Your draconic companion now commands the same frightful presence as other dragons. As an action, each creature of your choice that is within 15 feet of your draconic companion and that can see it must succeed on a Wisdom saving throw equal to 8 + your proficiency bonus + your draconic companion's Charisma modifier or become frightened of your companion for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to this feature for the next 24 hours.</description>
+		</sheet>
+	</element>
+</elements>
